@@ -17,7 +17,7 @@ the plugin-owned link entity and on the linked Issue.
   "shadowMode": true,
   "repositories": [
     {
-      "repository": "insightflo/papercompany-runtime",
+      "repository": "insightflo/paperwork-runtime",
       "companyId": "<inflo-company-id>",
       "projectId": "<papercompany-platform-project-id>",
       "projectWorkspaceId": "<runtime-workspace-id>",
@@ -32,7 +32,7 @@ the plugin-owned link entity and on the linked Issue.
           "githubApp": {
             "appIdRef": "INFLO_GITHUB_APP_ID",
             "privateKeyRef": "INFLO_GITHUB_APP_PRIVATE_KEY",
-            "installationRepository": "insightflo/papercompany-operations"
+            "installationRepository": "insightflo/paperwork-operations"
           }
         }
       }
@@ -43,7 +43,7 @@ the plugin-owned link entity and on the linked Issue.
         "githubApp": {
           "appIdRef": "INFLO_GITHUB_APP_ID",
           "privateKeyRef": "INFLO_GITHUB_APP_PRIVATE_KEY",
-          "installationRepository": "insightflo/papercompany-runtime"
+          "installationRepository": "insightflo/paperwork-runtime"
         }
       }
     }
@@ -94,7 +94,7 @@ mutation is performed. The JSON body is:
 
 ```json
 {
-  "repository": "insightflo/papercompany-runtime",
+  "repository": "insightflo/paperwork-runtime",
   "prNumber": 42,
   "headSha": "<exact 40-char pull-request head SHA>",
   "issueId": "<linked Papercompany issue id>",
@@ -161,7 +161,7 @@ Signed with the same `x-pc-signature-256` HMAC as the merge endpoint:
 
 ```json
 {
-  "repository": "insightflo/papercompany-runtime",
+  "repository": "insightflo/paperwork-runtime",
   "prNumber": 42,
   "headSha": "<exact 40-char pull-request head SHA>",
   "verdict": "pass | request_changes",
