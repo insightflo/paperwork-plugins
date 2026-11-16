@@ -62,3 +62,7 @@ pnpm paperclipai plugin install /Users/kwak/Projects/ai/papercompany/paperwork-p
 ```
 
 For production deployment, publish plugin packages to npm or a private npm-compatible registry, then install by package name through the runtime plugin manager.
+
+## License
+
+AGPL-3.0-only. See [LICENSE](LICENSE).
